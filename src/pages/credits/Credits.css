@@ -1,0 +1,22 @@
+.Credits {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 5vw;
+}
+
+.credits-text {
+    line-height: 4em;
+    text-align: left;
+}
+
+.credits-links {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.credits-links i {
+    font-size: xx-large;
+    margin: 0px 30px;
+}

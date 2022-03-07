@@ -1,0 +1,190 @@
+.legend {
+  position: absolute;
+  left: 42px;
+}
+
+.legend ul {
+  align-items: flex-start;
+  border: 2px double white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.legend-list li {
+  line-height: 1.5em;
+  list-style-type: decimal;
+  margin: 0px 0px 0px 20px;
+}
+
+.map-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 75vh;
+  margin: auto;
+}
+
+.map-container img, .map-dots {
+  width: 100%;
+}
+
+.map-dots {
+  position: absolute;
+}
+
+path,
+ellipse {
+  cursor: pointer;
+}
+
+.pop-up {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  display: flex;
+  height: 100%;
+  overflow-y: scroll;
+  position: absolute;
+  width: 100%;
+}
+
+.pop-up button {
+  background: rgba(206, 133, 49, 0.8);
+  border-radius: 15px 0px 0px 15px;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  position: fixed;
+  width: 8%;
+}
+
+.cards-district {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 80%;
+}
+
+.enigma {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.enigma:hover {
+  opacity: 1;
+}
+
+.enigma input {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+.enigma input:focus::placeholder {
+  opacity: 0;
+}
+
+.enigma button {
+  background: var(--background-elements);
+  border-radius: 0px 15px 15px 0px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 20%;
+}
+
+.input-display {
+  display: flex;
+}
+
+.auth-on {
+  position: absolute;
+  top: 50vh;
+  animation: opacity 4s forwards;
+  -webkit-animation: opacity 4s forwards;
+}
+
+@keyframes opacity {
+  0%  {opacity:1}
+  90%  {opacity:1}
+  100%  {opacity:0}
+}
+
+.auth-off {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .Deescordia {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .legend {
+    position: static;
+  }
+  
+  .map-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 40px auto;
+  }
+  
+  .map-container img, .map-dots {
+    width: 100%;
+  }
+  
+  .pop-up {
+    height: 180%;
+    top: -33vh;
+    width: 80%;
+  }
+  
+  .pop-up button {
+    height: 180%;
+  }
+  
+  .enigma {
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  .enigma input {
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    outline: none;
+    width: 80%;
+  }
+  
+  .enigma input:focus::placeholder {
+    opacity: 1;
+  }
+  
+  .enigma button {
+    background: var(--background-elements);
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+  }
+  
+  .input-display {
+    display: flex;
+  }
+  
+  .auth-on, .auth-off {
+    position: static;
+    top: 50vh;
+  }
+  
+}

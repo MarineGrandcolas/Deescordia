@@ -1,0 +1,47 @@
+.OfficerCard {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.officer-portrait {
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.officer-portrait img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .OfficerCard {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .officer-portrait {
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        height: 300px;
+        justify-content: center;
+        margin-bottom: 15px;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .officer-portrait img {
+        width: 100%;
+    }
+}

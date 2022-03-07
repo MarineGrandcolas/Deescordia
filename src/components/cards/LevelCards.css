@@ -1,0 +1,8 @@
+.lvl-container {
+    cursor: pointer;
+    margin: 130px 0px;
+}
+
+.lvl-container h1:hover {
+    color: var(--main-color-1);
+}
